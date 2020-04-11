@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title> Scacchi </title>
+    <link rel="stylesheet" href="static/css/chessboard-1.0.0.min.css">
+    <script scr = "static/js/jquery-3.5.0.min.js"></script>
+    <script src = "static/js/chessboard-1.0.0.min.js"></script>
+  </head>
+  <body>
+    <div id="board" style="width: 800px"></div>
+        <script>
+      var board = ChessBoard('board', {
+	      position: 'start',
+	      draggable: true,
+	      onDrop: onDrop
+      });
+      function onDrop(){
+	  console.log("TODO");
+      }
+  </script>
+  </body>
+</html>
